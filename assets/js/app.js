@@ -9,8 +9,6 @@ var cargarPagina = function () {
 };
 
 var cargarAlumnas = function(){
-    
-     
  $.getJSON(api.url, function (alumnas) {
         alumnas.forEach(function(alumna){
             renderAlumnas(alumna)
@@ -23,23 +21,23 @@ var cargarAlumnas = function(){
 var renderAlumnas = function(alumna){
     var $nombre = alumna.name;
     var $lastName = alumna.pLastName;
-    var $last2Name = alumna.mLastName;
+    var $lastName2 = alumna.mLastName;
     var nombreCompleto  ="";
     
     nombreCompleto += $nombre;
     nombreCompleto += " ";
-    nombreCompleto += $last2Name;
-    nombreCompleto += " ";
     nombreCompleto += $lastName;
+    nombreCompleto += " ";
+    nombreCompleto += $lastName2;
     
-    var $containerAsist = $("#asist");
+    var $contAsist = $("#asistencia");
     var $li = $("<li/>");
     var $input =$("<input type='checkbox'> ");
     
     $li.text(nombreCompleto);
-    $li.prepend($input);
+    $li.append($input);
     
-    $containerAsist.append($li)
+    $contAsist.append($li)
     
     
     

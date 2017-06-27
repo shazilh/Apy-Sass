@@ -14,7 +14,9 @@ nav{
     font:$title-font;
     color:$subtitle-color-white;
     padding: $container-padding;
-    
+}
+.alineado{
+    text-align:$text-align-left;
 }
 #container-menu ul{
     list-style: none;
@@ -22,21 +24,22 @@ nav{
 #container-Menu ul li {
     background: $container-background-black;
     color: white;
-    padding: .1%;
+    padding: 5%;
     margin-top: 1%;
     font-family: helvetica;
     list-style: none;
+    text-align:$text-align-left;
 }
 #container-Menu ul li:hover {
     background: $container-background-mustard;
     color: $color-hover-black; 
 }
-#container-Menu ul li .mostaza{
-    background: $container-background-mustard;
+.mostaza{
+    background: $container-background-mustard !important;
 }
-#container-Menu ul li .mostaza:hover{
-    background: $container-background-black;
-    color:$color-hover-white;
+.mostaza:hover{
+    background: $container-background-black !important;
+    color:$color-hover-white !important;
     list-style: none;
 }
 
@@ -46,17 +49,13 @@ nav{
     text-align: center;
     color: $subtitle-color-white;
     margin:$container-margin;
-    float:right;
-    clear:right;
+   
   
 }
 .container-central{
-    padding: 0;
+    text-align: $text-align-left;
 }
-#container-Menu{
-    float:left;
-    clear:left;
-}
+
 footer {
     width: $full-width;
     background: $container-background-black;
@@ -64,6 +63,9 @@ footer {
     color: $subtitle-color-white;
     text-align: center;
     padding: $container-padding;
+}
+#asistencia{
+    background: $container-background;
 }
 
 /*Media queries*/

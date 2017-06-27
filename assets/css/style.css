@@ -68,7 +68,10 @@ nav {
   height: 100px;
   font: 20px Tahoma;
   color: white;
-  padding: 30px; }
+  padding: 20px; }
+
+.alineado {
+  text-align: left; }
 
 #container-menu ul {
   list-style: none; }
@@ -76,38 +79,33 @@ nav {
 #container-Menu ul li {
   background: black;
   color: white;
-  padding: .1%;
+  padding: 5%;
   margin-top: 1%;
   font-family: helvetica;
-  list-style: none; }
+  list-style: none;
+  text-align: left; }
 
 #container-Menu ul li:hover {
   background: #f7b617;
   color: black; }
 
-#container-Menu ul li .mostaza {
-  background: #f7b617; }
+.mostaza {
+  background: #f7b617 !important; }
 
-#container-Menu ul li .mostaza:hover {
-  background: black;
-  color: white;
+.mostaza:hover {
+  background: black !important;
+  color: white !important;
   list-style: none; }
 
 .aside {
   background: black;
-  padding: 30px;
+  padding: 20px;
   text-align: center;
   color: white;
-  margin: 10px;
-  float: right;
-  clear: right; }
+  margin: 10px; }
 
 .container-central {
-  padding: 0; }
-
-#container-Menu {
-  float: left;
-  clear: left; }
+  text-align: left; }
 
 footer {
   width: 100%;
@@ -115,7 +113,10 @@ footer {
   margin-top: 2%;
   color: white;
   text-align: center;
-  padding: 30px; }
+  padding: 20px; }
+
+#asistencia {
+  background: #f7b617; }
 
 /*Media queries*/
 @media screen and (min-width: 320px) {
