@@ -1,12 +1,134 @@
-/*$sumar1: red;
-$sumar2: blue;*/
-#container {
+/*GLOBAL*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+
+.container {
   width: 100%;
-  margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.row::before, .row::after {
+  content: " ";
+  display: table; }
+
+.row::after {
+  clear: both; }
+
+[class*="col-"] {
+  min-height: 8px;
+  padding: 12px;
+  float: left; }
+
+.col-1 {
+  /* (1/12)*100 */
+  width: 8.333%; }
+
+.col-2 {
+  /* (2/12)*100 */
+  width: 16.666%; }
+
+.col-3 {
+  /* (3/12)*100 */
+  width: 25%; }
+
+.col-4 {
+  /* (4/12)*100 */
+  width: 33.333%; }
+
+.col-5 {
+  /* (5/12)*100 */
+  width: 41.666%; }
+
+.col-6 {
+  /* (6/12)*100 */
+  width: 50%; }
+
+.col-7 {
+  /* (7/12)*100 */
+  width: 58.333%; }
+
+.col-8 {
+  /* (8/12)*100 */
+  width: 66.666%; }
+
+.col-12 {
+  /* (12/12)*100 */
+  width: 100%; }
+
+* {
+  margin: 0;
+  font-family: helvetica; }
+
+nav {
+  width: 100%;
   background: #f7b617;
   height: 100px;
   font: 20px Tahoma;
+  color: white; }
+
+#container-menu ul {
+  list-style: none; }
+
+#container-Menu ul li {
+  background: black;
   color: white;
-  padding: 30px; }
+  padding: .1%;
+  margin-top: 1%;
+  font-family: helvetica;
+  list-style: none; }
+
+#container-Menu ul li:hover {
+  background: #f7b617;
+  color: black; }
+
+#container-Menu ul li .mostaza {
+  background: #f7b617; }
+
+#container-Menu ul li .mostaza:hover {
+  background: black;
+  color: white;
+  list-style: none; }
+
+.aside {
+  background: black;
+  text-align: center;
+  color: white; }
+
+footer {
+  width: 100%;
+  background: black;
+  margin-top: 2%;
+  color: white;
+  text-align: center; }
+
+/*Media queries para pantalla entera*/
+/*
+@media screen and (max-width: $break-small) {
+  #container-Menu,
+  #container-central{
+    width: 100%; } }
+@media screen and (min-width: $break-medium) {
+ #container-Menu,
+  #container-central {
+    width: 50%; } }
+@media screen and (min-width: $break-large) {
+  #container-Menu,
+  #container-central{
+    width: 100%; } }*/
+@media screen and (max-width: 320px) {
+  #container-Menu,
+  #container-central {
+    width: 100%; } }
+@media screen and (min-width: 720px) {
+  #container-Menu,
+  #container-central {
+    width: 50%; } }
+@media screen and (min-width: 1200px) {
+  #container-Menu,
+  #container-central {
+    width: 30%; } }
 
 /*# sourceMappingURL=style.css.map */
