@@ -67,7 +67,8 @@ nav {
   background: #f7b617;
   height: 100px;
   font: 20px Tahoma;
-  color: white; }
+  color: white;
+  padding: 30px; }
 
 #container-menu ul {
   list-style: none; }
@@ -94,15 +95,20 @@ nav {
 
 .aside {
   background: black;
+  padding: 30px;
   text-align: center;
-  color: white; }
+  color: white;
+  margin: 10px;
+  float: right;
+  clear: right; }
 
 footer {
   width: 100%;
   background: black;
   margin-top: 2%;
   color: white;
-  text-align: center; }
+  text-align: center;
+  padding: 30px; }
 
 /*Media queries para pantalla entera*/
 /*
@@ -119,16 +125,13 @@ footer {
   #container-central{
     width: 100%; } }*/
 @media screen and (max-width: 320px) {
-  #container-Menu,
-  #container-central {
+  #container-Menu {
     width: 100%; } }
 @media screen and (min-width: 720px) {
-  #container-Menu,
-  #container-central {
+  #container-Menu {
     width: 50%; } }
 @media screen and (min-width: 1200px) {
-  #container-Menu,
-  #container-central {
+  #container-Menu {
     width: 30%; } }
 
 /*# sourceMappingURL=style.css.map */

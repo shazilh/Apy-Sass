@@ -1,35 +1,23 @@
-$container-height:100px;
-$container-height-menu:50px;
-$container-margin:10px;
-$container-padding:30px;
-$container-background:#f7b617;
-$container-background-mustard:rgb(247,182,23);
-$container-background-black:black;
-$margin-top:150px;
+@import 'grid';
+@import 'fonts';
+@import 'sizes-containers';
+@import 'colors';
 
-$title-font: 20px Tahoma;
-$paragraph-size: 13px Arial;
 
-$subtitle-font: 34px Helvetica;
-$subtitle-color-white:white;
-$subtitle-color-black:black;
 
-$color-opacidad: rgba(white, .5);
-$color-hover-white: white;
-$color-hover-black:black;
 
 $full-width: 100%;
-$mediun-width: 50%;
+$medium-width: 50%;
 $small-width: 30%;
 
-$font-family: helvetica;
+
 
 $break-small: 320px;
 $break-medium: 720px;
 $break-large : 1200px;
 $display:inline-block;
 
-@import '_grid.scss';
+
 
 * {
     margin: 0;
@@ -41,13 +29,13 @@ nav{
     height: $container-height;
     font:$title-font;
     color:$subtitle-color-white;
+    padding: $container-padding;
     
 }
 #container-menu ul{
     list-style: none;
 }
 #container-Menu ul li {
-    
     background: $container-background-black;
     color: white;
     padding: .1%;
@@ -67,10 +55,15 @@ nav{
     color:$color-hover-white;
     list-style: none;
 }
-.aside {
+
+.aside{
     background:$container-background-black;
+    padding: $container-padding;
     text-align: center;
     color: $subtitle-color-white;
+    margin:$container-margin;
+    float:right;
+    clear:right;
   
 }
 footer {
@@ -79,6 +72,7 @@ footer {
     margin-top: 2%;
     color: $subtitle-color-white;
     text-align: center;
+    padding: $container-padding;
 }
 
 /*Media queries para pantalla entera*/
@@ -97,12 +91,12 @@ footer {
   #container-central{
     width: 100%; } }*/
  #container-Menu,
-  #container-central{
+  {
     @media screen and (max-width: $break-small) {
         width: $full-width;
     }
     @media screen and (min-width: $break-medium) {
-        width: $mediun-width;
+        width: $medium-width;
     }
     @media screen and (min-width: $break-large) {
         width: $small-width;
