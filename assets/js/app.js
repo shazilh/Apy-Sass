@@ -1,6 +1,6 @@
 // http://laboratoria.cuadra.co:9339/api/v1/students/
 var api = {
-    url: 'http://laboratoria.cuadra.co:9339/api/v1/students/'
+    url: 'https://laboratoria.cuadra.co/api/v1/students/'
 };
 
 var cargarPagina = function () {
